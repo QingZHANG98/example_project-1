@@ -1,8 +1,7 @@
 here::i_am("R/barchart.R")
 data(mtcars)
 
-library(wesanderson)
-colors <- wes_palettes$Zissou1[1:3]
+colors <- c("red", "blue", "green")
 
 tab <- table(mtcars$cyl, mtcars$gear)
 x_names <- paste0("Type ", 1:3)
